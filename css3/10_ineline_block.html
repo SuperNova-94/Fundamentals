@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline & Block Styling</title>
+    <style>
+        li {
+            /* border: 1px solid red; */
+            display: inline;
+        }
+
+        li a {
+            padding-right: 20px;
+        }
+
+        img {
+            display: block;
+            margin: auto;
+            /* 
+               Pro Tip: Remember if we want to just center an image with just margin it will not work. First set its display to block as the default
+               is inline. 
+            */
+        }
+
+        .box {
+            width: 32.8%;
+            display: inline-block;
+            box-sizing: border-box;
+            background: #f4f4f4;
+            padding: 20px;
+            margin-bottom: 15px;
+        }
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#">Technology</a></li>
+        <li><a href="#">Music</a></li>
+        <li><a href="#">Fashion</a></li>
+    </ul>
+    <br>
+    <img src="./05_backgrounds_borders/img/leaf.png" alt="leaf">
+    
+    <br>
+
+    <div class="box">
+        <h3>Heading</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat dolores dignissimos eos suscipit, odit enim adipisci corrupti nostrum eum quasi.</p>
+    </div>
+    <div class="box">
+        <h3>Heading</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat dolores dignissimos eos suscipit, odit enim adipisci corrupti nostrum eum quasi.</p>
+    </div>
+    <div class="box">
+        <h3>Heading</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat dolores dignissimos eos suscipit, odit enim adipisci corrupti nostrum eum quasi.</p>
+    </div>
+    
+</body>
+</html>
