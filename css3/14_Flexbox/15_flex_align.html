@@ -11,18 +11,67 @@
 
             display: flex;
             border: 1px solid red;
+            flex-wrap: wrap;  /* flex items break into multiple lines */
+
+            /*  Justify Content (Align things horizontally(x-axis)) */
             justify-content: space-evenly;
+            /*
+                OPTIONS:
+                flex-start <-- Default value
+                flex-end
+                center
+                space-between
+                space-around
+                space-evenly
+            */
+            height: 600px; /* Giving height to make use of align-items */
+            /* Align Items (Align things vertically(y-axis)) */
 
-            height: 600px; /* Giving height to make use of align-items
+            align-items: baseline;
+            /*
+                OPTIONS:
+                flex-start
+                flex-end
+                center 
+                baseline 
+                stretch <-- Default value
+            */
 
-            /* Align Items Allows you to align things Vertically (y-axis) (**Must be a height**) */
-            align-items: stretch; /* Default */
-            /* Options/Values */
-            align-items: flex-start;
-            align-items: baseline; /* Align flex items along their content's baseline */
-            align-items: flex-end;
-            align-items: center;
+            /* Align Items vertical where this is extra space */
+            align-content: flex-between;
+             /*
+                OPTIONS:
+                flex-start
+                flex-end
+                center 
+                space-between
+                space-around
+                stretch <-- Default
+            */
+           
 
+        }
+
+        .item-1 {
+            order: 3; /* Makes its contents of item-3 */
+        }   
+
+        .item-2 {
+            /*  Align single item vertical */
+            align-self: center;
+            /*
+                OPTIONS:
+                flex-start
+                flex-end
+                center
+                baseline
+                stretch <-- Default
+            */
+            order: 2;
+        }
+
+        .item-3 {
+            order: 1;
         }
 
         .item {
