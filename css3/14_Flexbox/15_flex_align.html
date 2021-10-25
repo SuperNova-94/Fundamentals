@@ -7,19 +7,22 @@
     <title>Flex Align</title>
     <style>
         #container {
+            background: #555;
+
             display: flex;
             border: 1px solid red;
-
-            /* Justify Content allows you to align things in the x-axis */
-                    /* Options */
-            justify-content: flex-start; /* default */
-            justify-content: flex-end;
-
-            justify-content: center;
-
-            justify-content: space-around;
-            justify-content: space-between;
             justify-content: space-evenly;
+
+            height: 600px; /* Giving height to make use of align-items
+
+            /* Align Items Allows you to align things Vertically (y-axis) (**Must be a height**) */
+            align-items: stretch; /* Default */
+            /* Options/Values */
+            align-items: flex-start;
+            align-items: baseline; /* Align flex items along their content's baseline */
+            align-items: flex-end;
+            align-items: center;
+
         }
 
         .item {
